@@ -1,0 +1,248 @@
+/*================================Configs padrões=====================================*/
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 125vh;
+
+}
+/*================================Design tela de perfil=====================================*/
+
+.infos_perfil {
+    display: flex;
+    position: relative;
+    top: 2%;
+    min-width: 100vh;
+}
+
+.h1_perfil {
+    position: absolute;
+    left: 50%;
+}
+
+.h3_nome {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+}
+
+
+.img_perfil {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    left: 8%;
+    top: 3%;
+    border-radius: 100%;
+    background-color: #034C8C;
+}
+
+.bt_edit_perfil {
+    position: absolute;
+    height: 50px;
+    width: 140px;
+    left: 110%;
+    top: 5%;
+    border: none;
+    color: #FFFFFF;
+    background: #135794;
+    border-radius: 10px;
+}
+
+.bt_edit_perfil:hover{
+    background: rgb(25, 115, 194);
+}
+
+
+.navigation {
+    position: relative;
+    height: 125vh;
+    background: #ffffff;
+    border-radius: 0 20px 20px 0;
+    width: 80px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.navigation:hover {
+    width: 250px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    padding: 8px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: #000000;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-height: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.navigation ul li a .icon img{
+   width: 50px;
+   height: 50px;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    height: 60px;
+    line-height: 50px;
+    white-space: nowrap;
+}
+
+
+
+.navigation ul li:hover {
+    background: rgba(3, 76, 140, 0.24);
+}
+
+
+.div_tela_perfil {
+    left: 6%;
+    display: flex;
+    position: relative;
+}
+
+.div_estatisticas {
+    position: absolute;
+    display: flex;
+    min-height: 10vh;
+    width: 130%;
+    top: 60%;
+    left: 10%;
+
+
+}
+
+.h1_estatisticas {
+    position: absolute;
+    left: 27%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 55px;
+
+
+}
+
+.infos_estatisticas {
+    position: absolute;
+    min-height: 40vh;
+    display: flex;
+    width: 130%;
+    top: 60%;
+}
+
+.div_nv_basicos,
+.div_erros_simples,
+.nv_avancado,
+.erros_duplos {
+    position: absolute;
+    height: 75px;
+    width: 240px;
+    border: 2px solid #F29F05;
+    border-radius: 10px;
+}
+
+.div_nv_basicos {
+    left: 17%;
+    top: 40%;
+}
+
+.div_erros_simples {
+    left: 46%;
+    top: 40%;
+}
+
+.nv_avancado {
+    left: 17%;
+    top: 80%;
+}
+
+.erros_duplos {
+    left: 46%;
+    top: 80%;
+}
+
+
+.h1_conquistas {
+    top: -150%;
+    left: 30%;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.conteudo {
+    position: absolute;
+    display: flex;
+    width: 140%;
+    top: 43%;
+    left: 10%;
+
+}
+
+.carrousel {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+}
+
+.carrousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    scroll-snap-align: start;
+    border-radius: 100%;
+    min-height: 100px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:nth-child(odd) {
+    background: #F20574;
+}
+
+.card:nth-child(even) {
+    background: #F2B705;
+}
